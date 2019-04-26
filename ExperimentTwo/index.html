@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Element of HTML</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <ul id="navigation">
+        <li><a href="#title">&lt;title&gt;</a></li>
+        <li><a href="#meta">&lt;meta&gt;</a></li>
+        <li><a href="#p">&lt;p&gt;</a></li>
+        <li><a href="#br">&lt;br&gt;</a></li>
+        <li><a href="#br">&lt;h1&gt;-&lt;h6&gt;</a></li>
+    </ul>
+
+    <div class="block" id="main_title" style="background-color: rgba(135,135,135,0.5); text-align: center">
+        <h2>HTML元素介绍</h2>
+    </div>
+
+    <div class="block" id="title">
+        <dl>
+            <dt><h2>&lt;title&gt;</h2></dt>
+            <dd>
+                <h3><strong>定义和用法</strong></h3>
+                <blockquote>
+                    <p> &lt;title&gt;元素可定义文档的<q>标题</q>。</p>
+                    <p>浏览器会以特殊的方式来使用标题，并且通常把它放置在浏览器窗口的标题栏或状态栏上。同样，当把文档加入用户的链接列表或者收藏夹或书签列表时，标题将成为该文档链接的默认名称。</p>
+                </blockquote>
+                <h3><strong>实例</strong></h3>
+                <pre>
+&lt;html&gt; 
+
+    &lt;head&gt;
+
+        <code>&lt;title&gt;XHTML Tag Reference&lt;/title&gt;</code>
+
+    &lt;/head&gt;
+
+&lt;body&gt;
+
+    The content of the document......
+
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>           
+            </dd>
+        </dl>
+    </div>
+
+    <div class="block" id="meta">
+            <dl>
+                <dt><h2>&lt;meta&gt;</h2></dt>
+                <dd>
+                    <h3><strong>定义和用法</strong></h3>
+                    <blockquote>
+                        <p> &lt;meta&gt;元素可提供有关页面的<q>元信息</q>（meta-information），比如针对搜索引擎和更新频度的描述和关键词。</p>
+                        <p>&lt;meta&gt;标签位于文档的头部，不包含任何内容。&lt;meta&gt; 标签的属性定义了与文档相关联的名称/值对。</p>
+                    </blockquote>
+                    <h3><strong>实例</strong></h3>
+                    <p>name 属性提供了名称/值对中的名称。HTML 和 XHTML 标签都没有指定任何预先定义的 &lt;meta&gt; 名称。通常情况下，您可以自由使用对自己和源文档的读者来说富有意义的名称。</p>
+                    <p>"keywords" 是一个经常被用到的名称。它为文档定义了一组关键字。某些搜索引擎在遇到这些关键字时，会用这些关键字对文档进行分类。</p>
+                    <p>类似这样的 meta 标签可能对于进入搜索引擎的索引有帮助：</p>
+                    <pre>
+&lt;meta name="keywords" content="HTML,ASP,PHP,SQL"&gt;</pre>           
+                </dd>
+            </dl>
+        </div>
+
+        <div class="block" id="p">
+                <dl>
+                    <dt><h2>&lt;p&gt;</h2></dt>
+                    <dd>
+                        <h3><strong>定义和用法</strong></h3>
+                        <blockquote>
+                            <p> &lt;p&gt;标签定义段落。</p>
+                            <p>p元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。</p>
+                        </blockquote>
+                        <h3><strong>实例</strong></h3>
+                        <p>以下代码标记了一个段落：</p>
+                        <pre>
+&lt;p&gt;This is some text in a very short paragraph&lt;/p&gt;</pre>           
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="block" id="br">
+                <dl>
+                    <dt><h2>&lt;br&gt;</h2></dt>
+                    <dd>
+                        <h3><strong>定义和用法</strong></h3>
+                        <blockquote>
+                            <p>&lt;br&gt;可插入一个简单的换行符。</p>
+                            <p>&lt;br&gt;标签是空标签（意味着它没有结束标签，因此这是错误的：&lt;br&gt;&lt;/br&gt;）。在XHTML中，把结束标签放在开始标签中，也就是&lt;br/&gt;。</p>
+                            <p>请注意，&lt;br&gt; 标签只是简单地开始新的一行，而当浏览器遇到 &lt;p&gt; 标签时，通常会在相邻的段落之间插入一些垂直的间距。</p>
+                        </blockquote>
+                        <h3><strong>实例</strong></h3>
+                        <p>以下代码标记了一个段落：</p>
+                        <pre>
+&lt;html&gt;
+
+    &lt;body&gt;
+                                            
+        &lt;p&gt;
+            <code>To break&lt;br/&gt;lines&lt;br/&gt;in a&lt;br/&gt;paragraph,&lt;br/&gt;use the br tag.</code>
+        &lt;/p&gt;
+                                            
+    &lt;/body&gt;
+
+&lt;/html&gt;</pre>           
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="block" id="h1-h6">
+                 <dl>
+                    <dt><h2>&lt;h1&gt;-&lt;h6&gt;</h2></dt>
+                    <dd>
+                        <h3><strong>定义和用法</strong></h3>
+                        <blockquote>
+                            <p>&lt;h1&gt;-&lt;h6&gt;标签可定义标题。&lt;h1&gt;定义最大的标题。&lt;h6&gt;定义最小的标题。</p>
+                            <p>由于 h 元素拥有确切的语义，因此请您慎重地选择恰当的标签层级来构建文档的结构。因此，请不要利用标题标签来改变同一行中的字体大小。相反，我们应当使用层叠样式表定义来达到漂亮的显示效果。</p>
+                            <p>如果您希望了解更多有关 HTML 标签选择和使用的信息，请阅读《Web 品质》</p>
+                        </blockquote>
+                        <h3><strong>实例</strong></h3>
+                        <p>六个不同的 HTML 标题：</p>
+                        <pre>
+&lt;h1&gt;这是标题 1&lt;/h1&gt;
+&lt;h2&gt;这是标题 2&lt;/h2&gt;
+&lt;h3&gt;这是标题 3&lt;/h3&gt;
+&lt;h4&gt;这是标题 4&lt;/h4&gt;
+&lt;h5&gt;这是标题 5&lt;/h5&gt;
+&lt;h6&gt;这是标题 6&lt;/h6&gt;</pre>      
+                    </dd>
+                </dl>
+            </div>
+</body>

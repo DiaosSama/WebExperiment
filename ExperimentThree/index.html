@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Experiment Three</title>
+    <meta charset="UTF-8"/>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+</head>
+
+<body onload="changeColor(1)">
+    <ul id="navigation">
+        <li><a href="#quicksort_title">快速排序</a></li>
+        <li><a href="#film_title">喜欢的电影</a></li>
+    </ul>
+    <div id="quicksort_title" class="title" style="background-color: rgba(135,135,135,0.5)">
+        <h2>QUICK SORT</h2>
+    </div>
+    <div id="quicksort">
+        <input type="text" id="input1" placeholder="请输入数据集，数字之间用英文逗号分隔">
+        <button type="button" onclick="quicksorthelp('input1')">排序</button>
+    </div>
+    <div id="film_title" class="title" style="background-color: rgba(135,135,135,0.5)">
+            <h2>Favorite Film</h2>
+        </div>
+    <div id="film">
+        <ul>
+            <li id="movie1">AKBingo!</li>
+            <li id="movie2">我是大哥大</li>
+            <li id="movie3">快把我哥带走</li>
+        </ul>
+        <button type="button" onclick="resort()">倒序</button>
+    </div>
+</body>
